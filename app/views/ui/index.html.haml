@@ -1,0 +1,6 @@
+.ui-index
+  %ul
+    - Dir.glob('app/views/ui/*.html.haml').sort.each do |file|
+      - wire_frame = File.basename file, '.html.haml'
+      - unless wire_frame.eql? 'index' || wire_frame.match(/^_/)
+        %li= link_to wire_frame.titleize, action: wire_frame

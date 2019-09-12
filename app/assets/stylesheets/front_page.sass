@@ -1,0 +1,35 @@
+.actions
+  margin: 1rem
+  background: none
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 2
+
+  a:last-child
+    margin-left: 1rem
+
+
+.hero
+  position: relative
+  background: #fff
+  background-size: cover
+  height: 50vh
+  overflow: hidden
+  &::before
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), image_url('restaurant.jpg')
+    background-size: cover
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1
+  .content
+    z-index: 2
+    h1
+      color: white
+      font-size: 4rem
+
