@@ -1,0 +1,20 @@
+%nav.navbar.navbar-light(style="background-color: #D32323;" )
+  %a.navbar-brand.m-auto.text-white(href="#")yip!¡
+
+.log-in.pt-5
+  .container
+    %h2.text-center Log In to yip!¡
+    .row.mt-5
+      .col-6.offset-3
+        %form.m-auto
+          .form-group
+            %label.sr-only Email
+            %input.form-control(type="email" name="email" id="email" placeholder="Email" )
+          .form-group
+            %label.sr-only Password
+            %input.form-control(type="password" name="password" id="password" placeholder="Password" )
+          %input.btn.btn.btn-lg.btn-block(type="submit" value="Log In" )
+          .float-right.mt-2
+            %span.text-muted New to yip!¡?
+            %a(href="#") Sign up
+

@@ -1,6 +1,8 @@
-.ui-index
-  %ul
+.container.pt-5
+  %h1.text-center.text-danger Templates
+  %div.list-group
     - Dir.glob('app/views/ui/*.html.haml').sort.each do |file|
       - wire_frame = File.basename file, '.html.haml'
       - unless wire_frame.eql? 'index' || wire_frame.match(/^_/)
-        %li= link_to wire_frame.titleize, action: wire_frame
+        = link_to(wire_frame.titleize, { action: wire_frame },
+         class: 'list-group-item list-group-item-action text-danger')

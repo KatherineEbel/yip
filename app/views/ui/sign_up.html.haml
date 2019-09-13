@@ -1,0 +1,31 @@
+%nav.navbar.navbar-light(style="background-color: #D32323;" )
+  %a.navbar-brand.m-auto.text-white(href="#")yip!¡
+
+.sign-up.pt-5
+  .container
+    %h2.text-center Sign Up for yip!¡
+    .row.mt-5
+      .col-8.offset-2
+        %form.m-auto
+          .form-group
+            .row
+              .col
+                %label.sr-only First name
+                %input.form-control(placeholder="First name" )
+              .col
+                %label.sr-only Last name
+                %input.form-control(placeholder="Last name" )
+          .form-group
+            %label.sr-only Email
+            %input.form-control(type="email" name="email" id="email" placeholder="Email" )
+          .form-group
+            %label.sr-only Password
+            %input.form-control(type="password" name="password" id="password" placeholder="Password" )
+          .form-group
+            %label.sr-only ZIP Code
+            %input.form-control(type="text" name="zipcode" id="zipcode" maxlength="5" placeholder="ZIP Code" )
+          %input.btn.btn.btn-lg.btn-block(type="submit" value="Sign Up" )
+          .float-right.mt-2
+            %span.text-muted Already on yip!¡?
+            %a(href="#") Log in
+
