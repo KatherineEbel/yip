@@ -1,0 +1,11 @@
+.card.mt-3
+  .card-body
+    = image_tag src="https://via.placeholder.com/200", class: 'float-left rounded'
+    .business-info.float-left.ml-3.d-flex.flex-column.justify-content-between.h-100
+      .card-title= business.name
+      %p.card-text
+        %span $
+        %span.text-muted﹒ Fast Food, Burgers
+      %span.card-text= business.telephone
+      %span.card-text= business.street
+      %span.card-text= business.city

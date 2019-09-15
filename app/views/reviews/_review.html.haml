@@ -1,0 +1,17 @@
+.card.mb-4
+  .card-body
+    .row
+      .col-sm-3
+        =image_tag(src="https://via.placeholder.com/200", class: 'rounded')
+      .col-sm-9
+        .review.d-flex.flex-column.justify-content-between
+          .business-details
+            %a.name.font-weight-bold.lead(href="#")= review.business.name
+            .contact.d-flex.flex-column.align-items-end.float-right.ml-2
+              %span (555) 555-5555
+              %span 123 Park St
+              %span Somewhere
+            %p.w-50
+              %span $
+              %span.text-muted﹒ Fast Food, Burgers
+          %p.comment.mt-5 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!"

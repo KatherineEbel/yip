@@ -1,0 +1,14 @@
+%nav.navbar.navbar-light(style="background-color: #D32323;" )
+  %a.navbar-brand.m-auto.text-white(href="#")yip!¡
+
+.container.w-75
+  %h1.text-center.text-danger.pt-5 Add A Business
+  = bootstrap_form_with model: @business, layout: :horizontal, class: 'mt-5' do |f|
+    =f.text_field :name, label_as_placeholder: true
+    =f.phone_field :telephone, label_as_placeholder: true
+    =f.text_field :street, label_as_placeholder: true
+    .form-row
+      =f.text_field :city, label_as_placeholder: true, wrapper: { class: 'col-6'}
+      =f.text_field :state, label_as_placeholder: true, wrapper: { class: 'col-3'}
+      =f.text_field :zip, label_as_placeholder: true, wrapper: { class: 'col-3' }
+    %input.btn.btn-lg.w-25(type="submit" value="Submit" )
