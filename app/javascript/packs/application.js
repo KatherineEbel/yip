@@ -10,6 +10,13 @@ require("channels")
 require('@fortawesome/fontawesome-free/js/all')
 require('bootstrap/dist/js/bootstrap')
 
+import 'bootstrap'
+import './stylesheets/application.sass'
+
+document.addEventListener('turbolinks:load', () => {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

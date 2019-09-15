@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'businesses#index'
+  resources :businesses
   get 'ui', to: 'ui#index'
 
   namespace 'ui' do

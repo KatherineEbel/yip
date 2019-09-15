@@ -1,0 +1,13 @@
+%nav.navbar.navbar-light(style="background-color: #D32323;" )
+  %a.navbar-brand.m-auto.text-white(href="#")yip!¡
+
+.container.pt-5
+  = link_to '+ Add a Business', new_business_path, class: 'btn btn-link text-danger'
+  %h5.mt-5 Results
+  - if @businesses.empty?
+    %p No businesses have been added to review.
+  - else
+    .results
+      - @businesses.each do |business|
+        = render business
+

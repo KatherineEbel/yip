@@ -1,0 +1,33 @@
+%nav.navbar.navbar-light(style="background-color: #D32323;" )
+  %a.navbar-brand.m-auto.text-white(href="#")yip!¡
+
+.container.w-75
+  %h1.text-center.text-danger.pt-5 Add A Business
+  %form.mt-5
+    .form-row
+      .col-sm-8
+        .form-group
+          %label.sr-only(for="name") Name
+          %input#name.form-control(type="text" placeholder="Business Name" )
+      .col-sm-4
+        .form-group
+          %label.sr-only(for="phone_number") Phone Number
+          %input#phone_number.form-control(type="tel" maxlength="10"  placeholder="Phone Number" )
+    .form-group
+      %label.sr-only(for="street_address") Street Address
+      %input#street_address.form-control(type="text" placeholder="Street Address" )
+    .form-row
+      .col
+        .form-group
+          %label.sr-only(for="city") City
+          %input#city.form-control(type="text" placeholder="City" )
+      .col
+        .form-group
+          %label.sr-only(for="state") State
+          %input#state.form-control(type="text" maxlength="2" placeholder="State" )
+      .col
+        .form-group
+          %label.sr-only(for="zip_code") ZIP Code
+          %input#zip_code.form-control(type="text" maxlength="10" placeholder="ZIP Code")
+
+    %input.btn.btn-secondary(type="submit" value="Submit" )
